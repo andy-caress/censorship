@@ -215,7 +215,7 @@ li.btn:hover a.b {
 }
 
 .interview p2 a:hover {
-  color: white;
+  color: red;
   background-color: #ff0000;
 }
 
@@ -231,7 +231,7 @@ li.btn:hover a.b {
 }
 
 .interview p3 a:hover {
-  color: white;
+  color: red;
   background-color: #ff0000;
 }
 
