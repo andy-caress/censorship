@@ -1,0 +1,163 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: none;
+  /* background-color: rgba(255, 255, 0, 0.32); */
+}
+
+.title {
+  overflow: hidden;
+  /* width: 100%; */
+  height: 50%;
+}
+
+.censorship {
+  font-family: halyard-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+  letter-spacing: -5px;
+  color: red;
+  /* text-shadow:
+    -1px -1px 0 #ff0000,
+    0 -1px 0 #ff0000,
+    1px -1px 0 #ff0000,
+    1px 0 0 #ff0000,
+    1px 1px 0 #ff0000,
+    0 1px 0 #ff0000,
+    -1px 1px 0 #ff0000,
+    -1px 0 0 #ff0000; */
+
+  /* position */
+  z-index: -1;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 25%;
+  right:25%;
+  text-align:center;
+
+  /* stretch */
+  display: inline-block;
+  transform: scale(2, 15);
+  white-space: nowrap;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+}
+
+img {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  height:100%;
+  width:100%;
+  max-height:100%;
+  max-width:100%;
+}
+
+.nav {
+  font-family: halyard-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 80px;
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 3rem;
+  letter-spacing: -5px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.nav-wrap {
+  display:block;
+}
+
+.nav {
+  /* position:relative; */
+  padding:22px 0 18px;
+  -webkit-box-pack: center;
+  font-weight:500;
+  letter-spacing: -1.5px;
+  top:8%;
+}
+
+.names {
+  width:100%;
+  list-style-type: none;
+  font-size:38px;
+  padding:0px;
+  display:flex;
+  justify-content: center;
+}
+
+.nav-wrap a {
+  text-decoration: none;
+  color:white;
+  /* color: #0000ff; */
+  /* mix-blend-mode: difference; */
+  /* background-color: transparent; */
+  /* color: #fff; */
+}
+
+li.btn a.a {
+  display:inline;
+}
+
+li.btn:hover a.a {
+  display:none;
+}
+
+li.btn a.b {
+  content: '[REDACTED], ';
+  display:none;
+}
+
+li.btn:hover a.b {
+  content: '[REDACTED], ';
+  display:inline;
+  color:#ff0000;
+  letter-spacing: -2px;
+}
+
+a {
+  text-decoration: none;
+  color:#0000ff;
+}
+
+a:hover{
+  color:#ff0000;
+  display: inline-block;
+  transform: scale(4, 1);
+  white-space: nowrap;
+  letter-spacing:-6px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1030px) {
+  .names {
+    list-style-type: none;
+    font-size: 21px;
+    letter-spacing: -.5px;
+    line-height: 1.3rem;
+    padding-left: 20px;
+    padding-right:20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .background {
+    margin:0;
+    padding:0px;
+  }
+
+  .names {
+    color:white;
+  }
+}
